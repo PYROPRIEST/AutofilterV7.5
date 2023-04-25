@@ -7,7 +7,7 @@ def is_enabled(value, default):
         return True
     elif value.lower() in ["false", "no", "0", "disable", "n"]:
         return False
-elif value.lower() in ["None"]:
+    elif value.lower() in ["None"]:
         return NoneType
     else:
         return default
